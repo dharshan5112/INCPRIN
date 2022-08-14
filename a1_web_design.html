@@ -1,0 +1,187 @@
+<html>
+<!--/head-->
+  <head>
+    <title>
+       a1 web design
+    </title>
+<link rel="stylesheet"href="a1_web.css">
+
+<div class ="logo"><a href="#"target="_blank">
+  <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/logo_tran.png" >
+
+</a>
+</div>
+
+    <nav>
+  <ul>
+    <li><a href="https://whatsapp.com" target="_blank">HOME</a></li>
+    <li><a href="#"target="_blank">MARKET</a></li>
+    <li><a href="#"target="_blank">TECHNOLOGY</a></li>
+    <li><a href="#"target="_blank">PRODUCTS</a></li>
+    <li><a href="#"target="_blank">SUSTAINABILITY</a></li>
+    <li><a href="#"target="_blank">ABOUT US</a></li>
+    <li><a href="#"target="_blank">CONTACT US</a></li>
+  </ul>
+
+ </nav>
+
+  </head>
+  
+  <body>
+
+    <!--/header-->
+    <header>
+       
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="slideshow-container">
+    <div class="mySlides1">
+      <img src= "C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/1.jpg"style="width:100%">
+    </div>
+  
+    <div class="mySlides1">
+      <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides1">
+      <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides1">
+        <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/4.jpg" style="width:100%;height: 450px;">
+      </div>
+  
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+   
+  </div>
+  
+
+  <!--/script-->
+  
+  <script>
+  let slideIndex = [1,1];
+  let slideId = ["mySlides1", "mySlides2"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+  
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+  
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+  }
+  </script>
+    
+      </header>
+
+      <br><br>
+
+      <!--/section-->
+
+    <section>
+        
+        <div >
+         <li class="white"> <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/handbag.png" align="center">
+          <h3>APPAREL BRANDING & <br>LABELLING SOLUTIONS </h3></li>
+        
+
+        <li class="dark">
+            <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/tag.png"><br><br>
+            <h3>AUTOMOTIVE  PRODUCTS</h3></li>
+        
+
+        <li class="white">
+             <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/handbag.png">
+            <h3>CONSUMER PACKAGED <br>LABELLING SOLUTIONS</h3></li>
+      
+            <li class="dark">
+            <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/tag.png"><br><br>
+            <h3>HEALTH CARE</h3></li>
+        </div>
+        
+    </section><br class="clear"><br>
+
+<!--/main-->
+
+    <main>
+       
+        <h3>ABOUT US</h3>
+        <p>
+            <h6> <b>INCPRIN<b> is a fully-integrated and comprehensive solutions provider
+            company.<br>Based in Chennai,we serve PAN India.we Engineer,Build and
+             maintain<br> commercial and utility-scale projects that deliver a 
+                powerful return on investment for our clients.
+        </h6></p>
+
+         <h4>ROBUST PRINTING</h4>
+         <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/handbag.png" class="left">
+         <ul class="main" ><li>Robust Printing and Finishing Infrastucture with ample
+               capacity for mass production.
+         </li></ul>
+         <h4>PACKAGING</h4>
+         <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/box.png" class="left">
+         <ul class="main" ><li>Capability to produce all kinds of labels and packaging items
+               catering to Apparel,FMCG,Electronics,Automotive,Pharma and Education industry.
+         </li></ul>
+
+         <h4>INDUSTRY STANDARD</h4>
+         <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/standard.png" class="left" id="indus">
+         <ul class="main"><li>Industry Standards Workflows & Automation Softwares in 
+            the entire production process.
+         </li></ul>
+
+         <h4>GLOBAL SERVICE</h4>
+         <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/earth.png" class="left">
+         <ul  id="main"><li>We are providing Pan India service.</li>
+             <li>Global service with the help of our Global partners.</li>       
+        </ul>
+        <br class="clear2">
+<div >
+        <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/SideImage2.png" id="side2">
+        </div>
+    </main>
+
+<!--/aside-->
+
+    <aside>
+      <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\Assets/SideImage1.jpg" id="aside"><br><br>
+      <div class="aside2">
+      <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/settings.png" class="right">
+      
+      <h4>TECHNOLOGY</h4>
+      <p class="content">We are using cutting edge technology and robust production process in <br>
+        manufacturing in wash care labels,heart transfer,self-adhesive labels,RF,RFID,<br>
+        mono cartons,rigid boxes,etc.
+      </p><hr  color="gray">
+      <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/leaf.png"  class="right">
+      <h4>SUSTAINABILITY</h4>
+      <p  class="content">Our main strategy is the usage of sustainability based raw materials & base <br>
+        material in labels and packaging production which will help us to align to india / <br>
+        Global carbon reduction program and green earth policies.
+      </p></div>
+    </aside>
+ <br class="clear3">
+<!--/footer-->
+
+    <footer>
+      <div id="footer">
+       <a href="https://m.facebook.com"target="_blank"><img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/facebook.png"></a>
+       <a href="https://twitter.com"target="_blank"> <img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/twitter.png" ></a>
+       <a href="https://instagram.com"target="_blank"><img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/instagram.png"></a>
+        <a href="https://in.linkedin.com"target="_blank"><img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/linkedin.png"></a>
+        <a href="https://youtube.com"target="_blank"><img src="C:\Users\CRAZY BOY\Desktop\GitHub\a1-website-design-fundamentals-dharshan5112\icon/youtube.png" ></a>
+      
+       <p>© 2022 INCPRIN, All Rights Reserved.</p></div>
+    </footer>
+        
+  </body>
+
+</html>
